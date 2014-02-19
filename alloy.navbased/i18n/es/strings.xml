@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="win1title">Ventana 1</string>
+	<string name="win1greeting">Hola mundo es Español</string>
+	<string name="win2title">Ventana 2</string>
+</resources>

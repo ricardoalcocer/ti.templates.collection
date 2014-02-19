@@ -1,0 +1,231 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<style>
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #737373;
+    background-color: white;
+    margin: 10px 13px 10px 13px;
+}
+table {
+	margin: 10px 0 15px 0;
+	border-collapse: collapse;
+}
+td,th {	
+	border: 1px solid #ddd;
+	padding: 3px 10px;
+}
+th {
+	padding: 5px 10px;	
+}
+
+a {
+    color: #0069d6;
+}
+a:hover {
+    color: #0050a3;
+    text-decoration: none;
+}
+a img {
+    border: none;
+}
+p {
+    margin-bottom: 9px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #404040;
+    line-height: 36px;
+}
+h1 {
+    margin-bottom: 18px;
+    font-size: 30px;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 18px;
+}
+h4 {
+    font-size: 16px;
+}
+h5 {
+    font-size: 14px;
+}
+h6 {
+    font-size: 13px;
+}
+hr {
+    margin: 0 0 19px;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+}
+blockquote {
+    padding: 13px 13px 21px 15px;
+    margin-bottom: 18px;
+    font-family:georgia,serif;
+    font-style: italic;
+}
+blockquote:before {
+    content:"\201C";
+    font-size:40px;
+    margin-left:-10px;
+    font-family:georgia,serif;
+    color:#eee;
+}
+blockquote p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    margin-bottom: 0;
+    font-style: italic;
+}
+code, pre {
+    font-family: Monaco, Andale Mono, Courier New, monospace;
+}
+code {
+    background-color: #fee9cc;
+    color: rgba(0, 0, 0, 0.75);
+    padding: 1px 3px;
+    font-size: 12px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+pre {
+    display: block;
+    padding: 14px;
+    margin: 0 0 18px;
+    line-height: 16px;
+    font-size: 11px;
+    border: 1px solid #d9d9d9;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+pre code {
+    background-color: #fff;
+    color:#737373;
+    font-size: 11px;
+    padding: 0;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:10px auto;
+    }
+}
+@media print {
+	body,code,pre code,h1,h2,h3,h4,h5,h6 {
+		color: black;
+	}
+	table, pre {
+		page-break-inside: avoid;
+	}
+}
+</style>
+<title>Alloy Cross-platform Tabs Template</title>
+
+</head>
+<body>
+<h1>Alloy Cross-platform Tabs Template</h1>
+
+<p>[image]</p>
+
+<h2>The code</h2>
+
+<p>This template contains:</p>
+
+<ul>
+<li><strong>index.xml - The basic screen definition</strong></li>
+<li><strong>index.tss - The stylesheet</strong></li>
+<li><strong>index.js - Actual code for the main screen</strong></li>
+<li><strong>i18n (internationalization) sample</strong>
+
+<ul>
+<li>the i18n folder contains sample folders for English (en) and Spanish (es).  If you plan for your app to be used by international users you should consider placing all you app captions in these files.</li>
+</ul>
+</li>
+</ul>
+
+
+<h2>Use-cases</h2>
+
+<p>This template is the ideal place to start any ...</p>
+
+<p>The template is configured to work in both Portrait and Landscape modes.  To lock it to a particular orientation simply open <strong>/styles/index.tss</strong> and configure this line:</p>
+
+<pre><code> orientationModes: [Ti.UI.LANDSCAPE_LEFT,Ti.UI.LANDSCAPE_RIGHT,Ti.UI.PORTRAIT]
+</code></pre>
+
+<h2>Notes</h2>
+
+<p>This template will run on Android devices/emulators with Android version 3.0 and above.</p>
+
+<h2>Holo Themes</h2>
+
+<p>This template uses <strong> Theme.Holo.Light </strong> as a default Holo theme.  You can change your Holo theme to <strong> Theme.Holo </strong> or <strong> Theme.Holo.Light.DarkActionBar </strong> (Available with API Level 14 and up) by editing the <strong> tiapp.xml </strong>, and look for the <application> tag inside the Android manifest.</p>
+
+<h2>Modules and libraries</h2>
+
+<p>This template has no external modules or libraries.</p>
+
+<h2>Building</h2>
+
+<h3>A. Make file</h3>
+
+<p>This template contains a convenient Makefile to facilitate launching the app on emulator or device.  Simply go to the app's folder through your Terminal and type:</p>
+
+<pre><code>make d
+</code></pre>
+
+<p>to send the app to your connected Android device, or</p>
+
+<pre><code>make e
+</code></pre>
+
+<p>to display a list of available emulators.</p>
+
+<h3>B. Studio</h3>
+
+<p>To send the app to emulator or device using Studio, click on the Run icon.</p>
+
+<p><img src="http://s20.postimg.org/mhhbunsst/launch_studio.png" alt="build_studio" /></p>
+
+<h3>C. Titanium CLI</h3>
+
+<p>If you'd like to test always in the same Emulator, run</p>
+
+<pre><code> ti build -p android --device-id
+</code></pre>
+
+<p>Find the emulator you'd like and copy its name to the clipboard, for example <strong> <em>titanium_11_HVGA_x86</em> </strong>.  With this name you can run</p>
+
+<pre><code> ti build -p android --device-id "titanium_11_HVGA_x86"
+</code></pre>
+
+<hr />
+
+<p>Last updated: January 2014</p>
+</body>
+</html>

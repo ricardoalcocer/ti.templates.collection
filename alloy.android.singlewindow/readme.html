@@ -1,0 +1,211 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<style>
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #737373;
+    background-color: white;
+    margin: 10px 13px 10px 13px;
+}
+table {
+	margin: 10px 0 15px 0;
+	border-collapse: collapse;
+}
+td,th {	
+	border: 1px solid #ddd;
+	padding: 3px 10px;
+}
+th {
+	padding: 5px 10px;	
+}
+
+a {
+    color: #0069d6;
+}
+a:hover {
+    color: #0050a3;
+    text-decoration: none;
+}
+a img {
+    border: none;
+}
+p {
+    margin-bottom: 9px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #404040;
+    line-height: 36px;
+}
+h1 {
+    margin-bottom: 18px;
+    font-size: 30px;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 18px;
+}
+h4 {
+    font-size: 16px;
+}
+h5 {
+    font-size: 14px;
+}
+h6 {
+    font-size: 13px;
+}
+hr {
+    margin: 0 0 19px;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+}
+blockquote {
+    padding: 13px 13px 21px 15px;
+    margin-bottom: 18px;
+    font-family:georgia,serif;
+    font-style: italic;
+}
+blockquote:before {
+    content:"\201C";
+    font-size:40px;
+    margin-left:-10px;
+    font-family:georgia,serif;
+    color:#eee;
+}
+blockquote p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    margin-bottom: 0;
+    font-style: italic;
+}
+code, pre {
+    font-family: Monaco, Andale Mono, Courier New, monospace;
+}
+code {
+    background-color: #fee9cc;
+    color: rgba(0, 0, 0, 0.75);
+    padding: 1px 3px;
+    font-size: 12px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+pre {
+    display: block;
+    padding: 14px;
+    margin: 0 0 18px;
+    line-height: 16px;
+    font-size: 11px;
+    border: 1px solid #d9d9d9;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+pre code {
+    background-color: #fff;
+    color:#737373;
+    font-size: 11px;
+    padding: 0;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:10px auto;
+    }
+}
+@media print {
+	body,code,pre code,h1,h2,h3,h4,h5,h6 {
+		color: black;
+	}
+	table, pre {
+		page-break-inside: avoid;
+	}
+}
+</style>
+<title>Android Single Window Template</title>
+
+</head>
+<body>
+<h1>Android Single Window Template</h1>
+
+<p><img src="http://s20.postimg.org/paajeot59/android_single_window.png" alt="screenshot" /></p>
+
+<h2>Use-cases</h2>
+
+<p>This template is the ideal place to start any Android App, setting the ground for further development.  Pair this with the <a href="https://marketplace.appcelerator.com/apps/2228#!overview">Android View Pager Module</a> to achieve a 100% native Android experience.</p>
+
+<h2>Holo Themes</h2>
+
+<p>This template uses <strong> Theme.Holo.Light </strong> as a default Holo theme.  You can change your Holo theme to <strong> Theme.Holo </strong> or <strong> Theme.Holo.Light.DarkActionBar </strong> (Available with API Level 14 and up) by editing the <strong> tiapp.xml </strong>, and look for the <application> tag inside the Android manifest.</p>
+
+<h2>Modules and libraries</h2>
+
+<p>This template contains the following external modules:</p>
+
+<h3>A. actionbarhelper.js</h3>
+
+<p>This project includes <strong> /lib/actionbarhelper.js </strong>, a small convenience class to manage the ActionBar.  Inside any Window controller, add a function to your open event like so:</p>
+
+<pre><code>$.index.addEventListener('open',function(e){
+    ABH=require('actionbarhelper').actionBarHelper;
+    actionBarHelper=new ABH($.index);
+    actionBarHelper.reloadMenu();
+    actionBarHelper.setTitle(thisWin.title);
+})
+</code></pre>
+
+<p>Check the library source code for additional methods.</p>
+
+<h2>Building</h2>
+
+<h3>A. Studio</h3>
+
+<p>To send the app to emulator or device using Studio, click on the Run icon.</p>
+
+<p><img src="http://s20.postimg.org/mhhbunsst/launch_studio.png" alt="build_studio" /></p>
+
+<h3>B. Make file</h3>
+
+<p>This template contains a convenient Makefile to facilitate launching the app on emulator or device.  Simply go to the app's folder through your Terminal and type:</p>
+
+<pre><code>make d
+</code></pre>
+
+<p>to send the app to your connected Android device, or</p>
+
+<pre><code>make e
+</code></pre>
+
+<p>to display a list of available emulators.</p>
+
+<h3>C. Titanium CLI</h3>
+
+<p>sdf</p>
+
+<hr />
+
+<p>Last updated: December 2013</p>
+</body>
+</html>
