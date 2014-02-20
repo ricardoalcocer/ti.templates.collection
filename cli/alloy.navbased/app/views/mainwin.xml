@@ -1,0 +1,3 @@
+<Alloy>
+	<Label id="label" onClick="doClick" text="L('win1greeting')"></Label>
+</Alloy>
