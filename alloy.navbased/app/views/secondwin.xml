@@ -1,4 +1,0 @@
-<Alloy>
-	<Window id="secondwin" title="L('win2title')" class="container" onOpen="dosetup">
-	</Window>
-</Alloy>

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<resources>
-	<string name="win1title">This is Window 1</string>
-	<string name="win1greeting">Hello World in English</string>
-	<string name="win2title">This is Window 2</string>
-</resources>
