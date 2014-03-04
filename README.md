@@ -10,16 +10,19 @@ Repository containing various App templates for Titanium apps.  These templates 
 ## Available Templates
 
 ### 1. Name: alloy.android.singlewindow
-
 Template for a "Single-window app" for Android.  Includes code for ActionBar access and ActionBar icons with event listeners. 
+
+### 2. Name: alloy.xplatform.singlewindow
+Template for a cross-platform single-window app.  Includes ActionBar on Android and Toolbar on iOS.
  
-### 2. Name: alloy.navbased
+### 3. Name: alloy.navbased
 Template for an iOS and Android app with Hierarchical Navigation, using NavigationWindow on iOS and Activities on Android, all from a single code-base.
 
-### 3. Name: alloy.xplatform.tabs
+### 4. Name: alloy.xplatform.tabs
 Template for a "Tab-based" app for iOS and Android.
 
-## Installation
+
+## Installation and Usage
 Templates can be used with both Titanium Studio and the Titanium CLI.
 
 ### I. Titanium CLI
@@ -31,13 +34,21 @@ To use these templates, drop them onto:
 Note: To find your correct SDK folder, go to Terminal/Command Window and type:
 
 	ti sdk
-	
+
 This will return information about your installed SDKs, including the SDK base installation path.
+
+To use:
+
+	ti create --template <template_name>
+
+For example:
+
+	ti create --template alloy.xplatform.tabs
+	
 
 ### II. Titanium Studio
 
 I'm still working on this as they require some minor changes, but they will be installed as Aptana Rubles (Ruby Bundles).
 
-## Usage
 
-	ti create --template <template_name>
+
