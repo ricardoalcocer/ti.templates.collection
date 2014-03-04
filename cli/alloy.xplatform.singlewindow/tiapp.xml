@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><ti:app xmlns:ti="http://ti.appcelerator.org">
-	<id>com.singlewindow</id>
-	<name>singlewindow</name>
-	<version>1.0</version>
+	<id>__PROJECT_ID__</id>
+	<name>__PROJECT_NAME__</name>
+	<version>PROJECT_VERSION__</version>
 	<publisher>not specified</publisher>
 	<url/>
 	<description>not specified</description>
