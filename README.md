@@ -7,25 +7,36 @@ Repository containing various App templates for Titanium apps.  These templates 
 * Example Alloy conditional code in XML, JS and TSS
 * Detailed README file in "blog post" format
 
-## Installation
-To use these templates, drop them onto:
-
-	<titanium_sdk_folder>/templates/app (there should already be a folder named 'default')
-
-After doing this, the templates are ready to be used by the Titanium CLI.
-
-
 ## Available Templates
 
-### Name: alloy.android.singlewindow
+### 1. Name: alloy.android.singlewindow
 
 Template for a "Single-window app" for Android.  Includes code for ActionBar access and ActionBar icons with event listeners. 
  
-### Name: alloy.navbased
-Template for a "Navigation-based" app for iOS and Android.  This template includes code for building an App that uses NavigationWindow on iOS and Activites on Android, all from a single code-base.
+### 2. Name: alloy.navbased
+Template for an iOS and Android app with Hierarchical Navigation, using NavigationWindow on iOS and Activities on Android, all from a single code-base.
 
-### Name: alloy.xplatform.tabs
+### 3. Name: alloy.xplatform.tabs
 Template for a "Tab-based" app for iOS and Android.
+
+## Installation
+Templates can be used with both Titanium Studio and the Titanium CLI.
+
+### I. Titanium CLI
+
+To use these templates, drop them onto:
+
+	<titanium_sdk_folder>/templates/app (there should already be a folder named 'default')
+	
+Note: To find your correct SDK folder, go to Terminal/Command Window and type:
+
+	ti sdk
+	
+This will return information about your installed SDKs, including the SDK base installation path.
+
+### II. Titanium Studio
+
+I'm still working on this as they require some minor changes, but they will be installed as Aptana Rubles (Ruby Bundles).
 
 ## Usage
 

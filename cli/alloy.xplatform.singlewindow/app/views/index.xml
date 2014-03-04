@@ -1,0 +1,13 @@
+<Alloy>
+	<Window class="container" onOpen="doopen">
+		<!-- in case you want to have a toolbar for UI parity with Android's ActionBar -->
+		<Toolbar platform="ios" top="0" borderTop="true" borderBottom="false">
+            <Items>
+                <FlexSpace/>
+                <Label id="windowtitle"/>
+                <FlexSpace/>
+            </Items>
+        </Toolbar>
+        <!-- ###### -->
+	</Window>
+</Alloy>

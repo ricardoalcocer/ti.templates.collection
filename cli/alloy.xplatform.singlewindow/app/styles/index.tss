@@ -1,0 +1,24 @@
+// container for iOS
+".container[platform=ios]": {
+	// add fullscreen=true if you want no notifications area
+	//fullscreen: true,
+	backgroundColor:"white",
+	backgroundImage: "/beach.png",
+	top:"20", // set to 0 in case of fullscreen or 20 when using Toolbar
+	statusBarStyle:Titanium.UI.iPhone.StatusBar.LIGHT_CONTENT,
+	layout: "vertical",
+	orientationModes: [Ti.UI.PORTRAIT, Ti.UI.UPSIDE_PORTRAIT, Ti.UI.LANDSCAPE_LEFT, Ti.UI.LANDSCAPE_RIGHT]
+}
+
+// container for Android
+".container[platform=android]": {
+	// add navBarHidden=true if you want no ActionBar, and fullscreen=true if you 
+	// want no notifications area
+	//navBarHidden: true, 
+	//fullscreen: true,
+	backgroundColor:"white",
+	backgroundImage: "/beach.png",
+	layout: "vertical",
+	orientationModes: [Ti.UI.PORTRAIT, Ti.UI.UPSIDE_PORTRAIT, Ti.UI.LANDSCAPE_LEFT, Ti.UI.LANDSCAPE_RIGHT],
+	exitOnClose: true
+}
