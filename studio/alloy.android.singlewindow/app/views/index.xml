@@ -1,0 +1,42 @@
+<Alloy>
+	<Window class="container">
+		<Label id="label">Hello, World</Label>
+
+		<!-- this defines your window's menu -->
+		<!-- add and remove options as needed -->
+		<Menu id="menu" platform="android">
+			<MenuItem 
+				id="menuItem" 
+				title="Save" 
+				icon="Ti.Android.R.drawable.ic_menu_save" 
+				onClick="doClick" 
+				showAsAction="Ti.Android.SHOW_AS_ACTION_ALWAYS" />
+
+			<MenuItem 
+				id="menuItem" 
+				title="Gallery" 
+				icon="Ti.Android.R.drawable.ic_menu_gallery" 
+				onClick="doClick" 
+				showAsAction="Ti.Android.SHOW_AS_ACTION_ALWAYS" />
+
+			<MenuItem 
+				id="menuItem" 
+				title="Edit" 
+				icon="Ti.Android.R.drawable.ic_menu_edit" 
+				onClick="doClick" 
+				showAsAction="Ti.Android.SHOW_AS_ACTION_IF_ROOM" />
+
+			<MenuItem 
+				id="menuItem" 
+				title="About" 
+				onClick="doClick" 
+				showAsAction="Ti.Android.SHOW_AS_ACTION_NEVER" />
+
+			<MenuItem 
+				id="menuItem" 
+				title="Credits" 
+				onClick="doClick" 
+				showAsAction="Ti.Android.SHOW_AS_ACTION_NEVER" />
+		</Menu>
+	</Window>
+</Alloy>
